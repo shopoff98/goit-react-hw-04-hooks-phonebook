@@ -12,7 +12,6 @@ export default function App() {
   const [contacts, setContacts] = useLocalStorage('contacts',[]);
   const [filter, setFilter] = useState('');
 
-
   function formSubmit ({ name, tel }){
     const contact = {
       name,
@@ -44,10 +43,7 @@ export default function App() {
     );
   };
 
-  
-   
     const visibleContacts = getVisibleContacts();
-
     return (
       <Container>
         <Toaster />

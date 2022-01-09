@@ -20,15 +20,13 @@ export default function ContactForm({onSubmit}){
       default:
         return
     };
-      
-    }
-
+  }
+  
   function handleSubmit(e) {
     e.preventDefault();
     onSubmit({ name, tel });
     setName('');
     setTel('');
-
   };
 
     return (
